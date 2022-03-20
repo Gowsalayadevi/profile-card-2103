@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before{
+    box-sizing:border-box;
+    margin:0;
+}
+:root{
+    --dark-cyan:hsl(185, 75%, 39%);
+    --saturated-blue:hsl(229, 23%, 23%);
+    --grayish-blue:hsl(227, 10%, 46%);
+    --dark-gray:hsl(0, 0%, 59%);
+    --kumbh-font:'Kumbh Sans', sans-serif;
+    --name-font-size:1.125rem;
+}
+body{
+    background-image:url("images/bg-pattern-top.svg"),url("images/bg-pattern-bottom.svg");
+    background-repeat:no-repeat, no-repeat;
+    background-color: var(--dark-cyan);
+    background-position:bottom left -250px ,top 400px right -200px;
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.title{
+    font-family: var(--kumbh-font);
+    font-size:var(--name-font-size);
+    margin:.5em 0;
+    color:var(--saturated-blue);
+}
+p{
+    font-family: var(--kumbh-font);
+    font-size: 1rem;
+    color:var(--dark-gray);
+    
+}
+
+.container{
+
+  width:300px;
+  border-radius: 0.625em;
+  overflow:hidden;
+
+}
+.card{
+   display:flex;
+   flex-direction:column;
+   background-color: white;
+   
+}
+
+.profile-header{
+    background-image: url("images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100px;
+    position:relative;
+}
+img{
+    border-radius: 50%;   
+
+}
+
+.profile{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    top:-50px;
+    margin:0;
+    
+}
+
+.personal-details{
+    display:flex;
+    justify-content:center;
+   
+    
+}
+span{
+    color:var(--dark-gray );
+    margin:0.625em;
+}
+
+.stat-details{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    position:relative;
+    padding:0.625em;
+    
+}
+.stat-details::after{
+    content:"";
+    background-color: var(--dark-gray);
+    width:100%;
+    height:1px;
+    top:0;
+    position:absolute;
+}
+
